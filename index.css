@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://images.hdqwalls.com/wallpapers/switzerland-landscape-4k-hd.jpg');
+  background-size: 130%;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background: rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.nav-bar a:hover {
+  color: #cf1089;
+}
+
+.nav-bar a.active {
+  color: #cf1089;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: difference;
+}
+
+.content h1 {
+  font-size: 90px;
+  font-weight: 900;
+  color: #aadeff;
+}
+
+.content p {
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+}
